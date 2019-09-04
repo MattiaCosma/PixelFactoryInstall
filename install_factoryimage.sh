@@ -18,7 +18,7 @@ cd install
 
 #install adb
 curl $adb_link -o adb.zip
-unzip adb.zip -d adb
+unzip -qq adb.zip -d adb
 export PATH=~/install/adb/platform-tools:$PATH
 cd adb/platform-tools
 adb devices
@@ -46,35 +46,35 @@ read DEVICE
 case $DEVICE in
   1 )
   curl $pix3link -o $IMAGEZIP
-  unzip $IMAGEZIP -d image
+  unzip -qq $IMAGEZIP -d image
     ;;
   2 )
   curl $pix3alink -o $IMAGEZIP
-  unzip $IMAGEZIP -d image
+  unzip -qq $IMAGEZIP -d image
     ;;
   3 )
   curl $pix3xlink -o $IMAGEZIP
-  unzip $IMAGEZIP -d image
+  unzip -qq $IMAGEZIP -d image
     ;;
   4 )
   curl $pix3axlink -o $IMAGEZIP
-  unzip $IMAGEZIP -d image
+  unzip -qq $IMAGEZIP -d image
     ;;
   5 )
   curl $pix2link -o $IMAGEZIP
-  unzip $IMAGEZIP -d image
+  unzip -qq $IMAGEZIP -d image
     ;;
   6 )
   curl $pix2xlink -o $IMAGEZIP
-  unzip $IMAGEZIP -d image
+  unzip -qq $IMAGEZIP -d image
     ;;
   7 )
   curl $pixxlink -o $IMAGEZIP
-  unzip $IMAGEZIP -d image
+  unzip -qq $IMAGEZIP -d image
     ;;
   8 )
   curl $pixlink -o $IMAGEZIP
-  unzip $IMAGEZIP -d image
+  unzip -qq $IMAGEZIP -d image
     ;;
 esac
 
